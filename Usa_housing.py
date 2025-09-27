@@ -1,5 +1,5 @@
 import streamlit as st
-import mysql.connector
+#import mysql.connector
 
 # Connect to MySQL
 def get_connection():
@@ -43,4 +43,5 @@ if st.button("Show Records"):
     conn.close()
     
     for row in rows:
+
         st.write(row)
